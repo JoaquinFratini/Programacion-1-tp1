@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP-Javascrip</title>
+</head>
+<body>
+    
+<!--Ingresar tres valores e indicar cual es el mayor y cual el menor.
+-->
+<h1>Ejercicio1</h1>
+<label for="n1">Numero 1</label>
+<input type="number" id="n1">
+<label for="n2">Numero 2</label>
+<input type="number" id="n2">
+<label for="n3">Numero3</label>
+<input type="number" id="n3">
+<!-- cree los lugares para poner los numeros label-titulo cuadrado poner numero -->
+
+<button onclick="ResultadoEj1()">Comparar</button>
+<input type=" text" id="Resultadoej1">
+<!-- cree el boton que cuando se hace click suelta el resultado -->
+
+<script>
+ function ResultadoEj1() {
+      
+     let n1=parseFloat( document.getElementById("n1").value)
+     let n2=parseFloat( document.getElementById("n2").value)
+     let n3=parseFloat( document.getElementById("n3").value)
+     //puse una variable a los numeros
+     if ((n1>n2)&& (n1>n3)){
+         document.getElementById("Resultadoej1").value= "El mayor es el n 1"}
+         if ((n2>n1)&& (n2>n3)){
+         document.getElementById("Resultadoej1").value= "El mayor es el n 2"}
+         if ((n3>n2)&& (n3>n1)){
+         document.getElementById("Resultadoej1").value= "El mayor es el n 3"}
+     //comprare los nemeros y hice la accion de que suelte el mayor
+ }
+</script>
+<h2>Ejercicio2</h2>
+<label for="va1">valor1</label>
+<input type="number" id="va1">
+<label for="va2">valor2</label>
+<input type="text" id="va2">
+
+
+<button onclick="ResultadoEj2()">Comparar</button>
+<input type=" text" id="ResultadoEj2">
+<script>
+    function ResultadoEj2(){
+        let n01=parseFloat( document.getElementById("va1").value)
+ let n02=parseFloat( document.getElementById("va2").value)
+ 
+ document.getElementById("ResultadoEj2").value= "La suma es " + (n01+n02)
+    }
+</script>
+
+<h3>Ejercici3</h3>
+<label for="palaba1">PALABRA1</label>
+<input type="text" id="palabra1"> 
+<label for="numero1">Nuemero1</label>
+<input type="number"id="Nuemero1">
+<label for="Repetir">Repetir</label>
+<input type="number"id="Repetir">
+
+
+
+</body>
+</html>
