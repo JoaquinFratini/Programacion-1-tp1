@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP-Javascrip</title>
-</head>
+    <script src="./assets/js/functions.js"></script>
+</head>           
 <body>
     
 <!--Ingresar tres valores e indicar cual es el mayor y cual el menor.
@@ -23,22 +24,7 @@
 <input type=" text" id="Resultadoej1">
 <!-- cree el boton que cuando se hace click suelta el resultado -->
 
-<script>
- function ResultadoEj1() {
-      
-     let n1=parseFloat( document.getElementById("n1").value)
-     let n2=parseFloat( document.getElementById("n2").value)
-     let n3=parseFloat( document.getElementById("n3").value)
-     //puse una variable a los numeros
-     if ((n1>n2)&& (n1>n3)){
-         document.getElementById("Resultadoej1").value= "El mayor es el n 1"}
-         if ((n2>n1)&& (n2>n3)){
-         document.getElementById("Resultadoej1").value= "El mayor es el n 2"}
-         if ((n3>n2)&& (n3>n1)){
-         document.getElementById("Resultadoej1").value= "El mayor es el n 3"}
-     //comprare los nemeros y hice la accion de que suelte el mayor
- }
-</script>
+
 <h2>Ejercicio2</h2>
 <label for="va1">valor1</label>
 <input type="number" id="va1">
@@ -89,5 +75,50 @@
 
 }
 </script>
+<h5>Ejercicio5</h5>
+<label for="Palabra">Ingrese la palabra</label>
+<input type="text"id="Palabra">
+<label for="nletras">Numeros de letras</label>
+<input type="number" id="nletras">
+<button onclick="Resultadoej5"()>Resultado</button>
+<input type="text" id="Resultadoej5">
+
+<script>
+function Resultadoej5(){
+let Palabra=document.getElementById("Palabra").value
+
+let nletras=parseFloat(document.getElementById("nletras").value)
+nletras= Palabra
+
+
+
+
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
