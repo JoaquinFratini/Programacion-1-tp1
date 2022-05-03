@@ -68,27 +68,26 @@
 
 
 <h4>Ejercicio4</h4>
-<label for="celcius">celcius</label>
-<input type="number" id="celcius">
+<label for="celsius">celsius</label>
+<input type="number" id="celsius">
 <label for="far">Fahrenheit</label>
 <input type="number" id="far">
 <button onclick="ResultadoEj4()">Traspaso</button>
 <input type=" text" id="ResultadoEj4">
-
+<input type="text"id="resultado4far">
 <script>
     function ResultadoEj4(){
-    let c1=parseFloat( document.getElementById("c1").value)
-if (c1=1)
-
-
-    let f1=parseFloat( document.getElementById("f1").value)
-
-if (f1=33,8)
-
-document.getElementById("ResultadoEj4").value= "El traspaso es " + (c1+f1)
+      
+    let c1=parseFloat( document.getElementById("celsius").value)
+    c1=(c1 * (9 / 5) + 32)
+    let f1=parseFloat( document.getElementById("far").value)
+    f1=((f1-32)/1.8000)
+    document.getElementById("ResultadoEj4").value= "El traspaso es " + c1
+  
+    
+    document.getElementById("resultado4far").value= "El traspaso es " + f1
 
 }
-
 </script>
 </body>
 </html>
