@@ -78,17 +78,19 @@
 <h5>Ejercicio5</h5>
 <label for="Palabra">Ingrese la palabra</label>
 <input type="text"id="Palabra">
-<label for="nletras">Numeros de letras</label>
-<input type="number" id="nletras">
-<button onclick="Resultadoej5"()>Resultado</button>
+
+<button onclick="Resultadoej5()">Resultado</button>
 <input type="text" id="Resultadoej5">
 
 <script>
 function Resultadoej5(){
-let Palabra=document.getElementById("Palabra").value
+   let palabra = document.getElementById("Palabra").value;
 
-let nletras=parseFloat(document.getElementById("nletras").value)
-nletras= Palabra
+    let resultado=document.getElementById("Resultadoej5");
+
+    resultado.value = "La " + palabra + " tiene " + palabra.length + " letras"
+
+
 
 
 
