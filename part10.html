@@ -52,7 +52,7 @@ function preload ()
     this.load.image('bomb', '../assets/images/bomb.png');
     this.load.spritesheet('dude', '../assets/images/dude.png', { frameWidth: 32, frameHeight: 48 });
     this.load.image("star2", "../assets/images/star2.png")
-    this.load.image("gameOver", "../assets/images/gameover.webp")
+    this.load.image("gameover", "../assets/images/gameover.webp")
 }
 
 function create ()
@@ -61,7 +61,6 @@ function create ()
     //  A simple background for our game
     this.add.image(400, 300, 'fondoespacio') //.setScale(0);
     
-
     //  The platforms group contains the ground and the 2 ledges we can jump on
     platforms = this.physics.add.staticGroup();
 
@@ -112,12 +111,26 @@ function create ()
         setXY: { x: 12, y: 0, stepX: 70 }
     });
 
+    star2 = this.physics.add.group({
+        key: 'star2',
+        repeat: 5,
+        setXY: { x: 40, y: 0, stepX: 140 }
+    });
+
+
+
     stars.children.iterate(function (child) {
 
         //  Give each star a slightly different bounce
         child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));
 
     });
+
+    star2.children.iterate(function (child) {
+
+child.setBounceY(Phaser.Math.FloatBetween(0.3, 1));
+
+});
 
     bombs = this.physics.add.group();
 
@@ -128,10 +141,11 @@ function create ()
     this.physics.add.collider(player, platforms);
     this.physics.add.collider(stars, platforms);
     this.physics.add.collider(bombs, platforms);
+    this.physics.add.collider(star2, platforms);
 
     //  Checks to see if the player overlaps with any of the stars, if he does call the collectStar function
     this.physics.add.overlap(player, stars, collectStar, null, this);
-
+    this.physics.add.overlap(player, star2, collectStar, null, this);
     this.physics.add.collider(player, bombs, hitBomb, null, this);
 }
 
@@ -140,7 +154,8 @@ function update ()
     if (gameOver)
     {
        
-        return;
+        
+
     }
 
     if (cursors.left.isDown)
@@ -170,6 +185,8 @@ function update ()
 
 function collectStar (player, star)
 {
+
+
     star.disableBody(true, true);
 
     //  Add and update the score
@@ -196,6 +213,8 @@ function collectStar (player, star)
     }
 }
 
+
+
 function hitBomb (player, bomb)
 {
     this.physics.pause();
@@ -203,7 +222,7 @@ function hitBomb (player, bomb)
     player.setTint(0xff0000);
 
     player.anims.play('turn');
-
+   
     gameOver = true;
 
    
