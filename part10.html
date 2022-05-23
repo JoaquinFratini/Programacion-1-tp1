@@ -135,7 +135,7 @@ child.setBounceY(Phaser.Math.FloatBetween(0.3, 1));
     bombs = this.physics.add.group();
 
     //  The score
-    scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#FFFFFF' });
+    scoreText = this.add.text(16, 16, 'Puntos: 0', { fontSize: '32px', fill: '#FFFFFF',fontFamily: "verdana, arial, sans-self" });
 
     //  Collide the player and the stars with the platforms
     this.physics.add.collider(player, platforms);
@@ -191,7 +191,7 @@ function collectStar (player, star)
 
     //  Add and update the score
     score += 10;
-    scoreText.setText('Score: ' + score);
+    scoreText.setText('Puntos: ' + score);
 
     if (stars.countActive(true) === 0)
     {
@@ -201,7 +201,7 @@ function collectStar (player, star)
             child.enableBody(true, child.x, 0, true, true);
 
         });
-
+    
         var x = (player.x < 400) ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400);
 
         var bomb = bombs.create(x, 16, 'bomb');
@@ -212,8 +212,6 @@ function collectStar (player, star)
 
     }
 }
-
-
 
 function hitBomb (player, bomb)
 {
