@@ -1,0 +1,41 @@
+{
+	"textures": [
+		{
+			"image": "atlas fondo.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1000,
+				"h": 800
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "esp3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1000,
+						"h": 800
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1000,
+						"h": 800
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 1000,
+						"h": 800
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:fedc403a61c84ab234a483bb648f4724:db0d2ea93e79f45d5a677352538201fb:887bd2be047668d31e44bca8c56fb90e$"
+	}
+}

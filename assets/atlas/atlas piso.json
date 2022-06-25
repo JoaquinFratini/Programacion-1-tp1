@@ -1,0 +1,62 @@
+{
+	"textures": [
+		{
+			"image": "atlas piso.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 436,
+				"h": 34
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "plataform2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 400,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 400,
+						"h": 32
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 400,
+						"h": 32
+					}
+				},
+				{
+					"filename": "piso1 verde.jpg",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 403,
+						"y": 1,
+						"w": 32,
+						"h": 32
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:060f9014fd1add5d1e457430089f85eb:ad28855b3a54bbfd80dfa2c1c65fac28:455e8515e6048873fd031427cf54afbd$"
+	}
+}

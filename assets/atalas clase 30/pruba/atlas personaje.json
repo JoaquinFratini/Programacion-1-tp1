@@ -1,0 +1,41 @@
+{
+	"textures": [
+		{
+			"image": "atlas personaje.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 284,
+				"h": 43
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "dude2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 288,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 5,
+						"w": 284,
+						"h": 43
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 284,
+						"h": 43
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:bd9aa8f4d8738a0542b9952a4f343e95:22a74af3f0d1b641fa9b8529993f9b46:c4a82173a6dba56d9f0dfca9a610caab$"
+	}
+}

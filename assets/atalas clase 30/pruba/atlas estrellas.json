@@ -1,0 +1,62 @@
+{
+	"textures": [
+		{
+			"image": "atlas estrellas.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 48,
+				"h": 22
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "star.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 24,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 24,
+						"h": 22
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 24,
+						"h": 22
+					}
+				},
+				{
+					"filename": "star2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 24,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 24,
+						"h": 22
+					},
+					"frame": {
+						"x": 24,
+						"y": 0,
+						"w": 24,
+						"h": 22
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:be67b64e136dd0d32fe7fcf5ea241e03:0b0367b2508c6629f82268f896070b2c:d1c23861694434b4bfd7d3e6b00aab20$"
+	}
+}
