@@ -96,31 +96,49 @@ function Resultadoej5(){
 
 
 }
+</script>
+ <h6>Ejercicio6</h6>
+	<script>
+	function parImpar()
+	{
+		var valor=parseInt(document.getElementById("valor").value);
+		var tipo=(valor%2)?"Impar":"Par";
+		document.getElementById("resultado").innerHTML="El numero "+valor+" es "+tipo;
+		return false;
+	}
+	</script>
+</head>
+<body>
+ 
+<form>
+	<input type="text" id="valor" value="" placeholder="introduce el numero">
+	<input type="submit" onclick="return parImpar()" value="Resultado">
+</form>
+ 
+<div id="resultado"></div>
+ 
+</body>
 
+<h7>Ejercicio7</h7>
 
+<script>
+    const Ejercicio7 = () => {
+  const num1 = document.getElementById("num1").value * 1;
+  const num2 = document.getElementById("num2").value * 1;
+  const resultado = document.getElementById("resultado_ej7");
+  resultado.textContent = "";
+
+  var menor = Math.min(num1, num2);
+  var mayor = Math.max(num1, num2);
+  
+  while (menor <= mayor) {
+    let calculo = menor % 3;
+    if (calculo === 0) {
+      resultado.textContent = resultado.innerHTML + " | " + menor;
+    }
+    menor++;
+  }
+};
 </script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
 </html>
