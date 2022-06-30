@@ -163,11 +163,85 @@ function func_ej7(){
 </script>
 <div>
 <h8>Ejercicio8</h8>
-<label for="ej8_n1">Colocar numero</label>
-<input type="number" id="ej8_n1">
-<button onclick="func_ej8()">Numeros primos</button>
-<label for="ej8_r1">Resultado</label>
-<input type="number" id="ej8_r1"> ==
+<label for="EJ8_N1">Ingrese Numero</label>
+<input type="number" id="EJ8_N1"> 
+<button onclick="func_EJ8()">calcular</button>
+<p id="EJ8_R1"></p>
+<script>
+   function func_EJ8(){
+     const num1 = parseInt(document.getElementById("EJ8_N1").value);
+     const resultado = document.getElementById("EJ8_R1");
 
+     const esPrimo = (num) => {
+         for (let i = 2; i < num; i++) {
+             if (num % i === 0) {
+              return false;
+             }
+            return true;
+         }
+     }
+     for (let x = 0; x <= num1; x++) {
+         esPrimo(x) && (resultado.textContent = resultado.innerHTML + " | " + x);
+        }
+    }
+
+
+
+
+
+    
+</script>
+<h9>Ejercicio 9</h9>
+    <label for="EJ9_T1">Ingrese Nombre</label>
+    <input type="text" id="EJ9_T1">
+    <label for="EJ9_T2">Ingrese Apellido</label>
+    <input type="text" id="EJ9_T2">
+    <label for="EJ9_N1">Ingrese edad</label>
+    <input type="number" id="EJ9_N1">
+    <label for="EJ9_T3">Ingrese ciudad</label>
+    <input type="text" id="EJ9_T3">
+    <button onclick="func_EJ9()">rellenar</button>
+    <p id="EJ9_R1"></p>
+
+    <script>
+         function func_EJ9(){
+     const nombre = document.getElementById("EJ9_T1").value;
+     const apellido = document.getElementById("EJ9_T2").value;
+     const edad = parseInt(document.getElementById("EJ9_N1").value);
+     const ciudad = document.getElementById("EJ9_T3").value;
+     const resultado = document.getElementById("EJ9_R1");
+     resultado.textContent = "Mi nombre es " + nombre + " " + apellido + " , tengo " + edad + " años. Nací en la ciudad de " + ciudad;
+ }
+
+
+
+    </script>
+
+<h10>Ejercicio 10</h10>
+<label for="EJ10_N1">Ingrese Numero</label>
+<input type="number" id="EJ10_N1">
+<label for="EJ10_N2">Ingrese otro Numero</label>
+<input type="number" id="EJ10_N2">
+<button type="button" onclick="func_EJ10()">calcular</button>
+<p id="EJ10_R1"></p>
+
+
+<script>
+function func_EJ10(){
+    const num1 = parseInt(document.getElementById("EJ10_N1").value);
+    const num2 = parseInt(document.getElementById("EJ10_N2").value);
+    const resultado = document.getElementById("EJ10_R1");
+
+    if(num1 < num2){
+        for(let i=num1+1; i < num2; i++){
+            resultado.textContent = resultado.innerHTML + " | " + i;
+        }
+    }else{
+        for(let i=num1+1; i < num1; i++){
+            resultado.textContent = resultado.innerHTML + " | " + i;
+        }
+    }
+}
+</script></num1>
 </div>
 </body>

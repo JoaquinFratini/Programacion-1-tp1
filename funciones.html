@@ -1,0 +1,16 @@
+function func_EJ8(){
+    const num1 = parseInt(document.getElementById("EJ8_N1").value);
+    const resultado = document.getElementById("EJ8_R1");
+
+    const esPrimo = (num) => {
+        for (let i = 2; i < num; i++) {
+            if (num % i === 0) {
+             return false;
+            }
+           return true;
+        }
+    }
+    for (let x = 0; x <= num1; x++) {
+        esPrimo(x) && (resultado.textContent = resultado.innerHTML + " | " + x);
+       }
+   }
