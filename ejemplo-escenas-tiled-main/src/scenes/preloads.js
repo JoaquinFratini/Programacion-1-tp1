@@ -46,6 +46,6 @@ export class Preloads extends Phaser.Scene {
     });
 
     // Pasa directamente a la escena del menú principal
-    this.scene.start("lvl3");
+    this.scene.start("MainMenu");
   }
 }
